@@ -22,7 +22,7 @@ fill(255,0,0);
   y=y-4;}
 }
  else if(keyCode== DOWN){
-   if(y<600){
+   if(y<600-90){
   y=y+4;}
  }
 stroke(255);
