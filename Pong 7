@@ -1,4 +1,5 @@
-int y= 50;
+
+ int y= 50;
 int a =0;
 int b =0;
 int dreta=50;
@@ -24,7 +25,7 @@ ellipse(dreta,d,30,30);
   if(dreta==750 && d>f && d<f+90 ){
   rebot=-2;
   dreta = dreta +rebot; }
-  if(dreta==50){
+  if(dreta==50 && d>y && d<y+90){
   rebot=2;
   }
   
