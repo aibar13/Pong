@@ -1,0 +1,19 @@
+int a = 50;
+
+
+void setup() {
+  size(800,600);
+ }
+void draw(){
+   background(0);
+  stroke(255,255,255);
+  line(400,0,400,600);
+ noStroke();
+ rect(50,a,20,90);
+ if(keyPressed&&(key==CODED))
+ if(keyCode== UP){
+   a= a-5;}
+   if(keyPressed&&(key==CODED))
+   if(keyCode== DOWN){
+     a= a+5;}
+}
