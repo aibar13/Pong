@@ -1,0 +1,77 @@
+int y= 50;
+int a =0;
+int b =0;
+int dreta=400;
+int rebot=2;
+int d=0;
+int f=50;
+int reb=2;
+
+void setup(){
+  size(800,600);
+}
+
+void draw(){
+ background(0);
+ stroke(255,255,255);
+ line(400,0,400,600);
+ textSize(30);
+fill(255,255,255);
+text("Punts"+a,250,50);
+text("Punts"+b ,450,50);
+
+
+fill(255);
+ellipse(dreta,d,30,30);
+
+  dreta=dreta +rebot;
+  if(dreta==750 && d>y && d<y+90 ){
+  rebot=-2;
+  dreta = dreta +rebot;}
+  if(dreta==70 && d>f && d<f+90){
+  rebot=2;
+  }
+  
+  d=d+reb;
+  if(d==600){
+    reb=-2;}
+  if(d==0){
+    reb=2;}
+  
+  if(dreta==0){
+    b=b+1;
+  dreta=400;}
+  if(dreta==800){
+    a=a+1;
+  dreta =400;}
+  
+ 
+  
+stroke(255);
+fill(255,255,255);
+ rect(50,f,20,90);
+
+ if(keyPressed && (key==CODED))
+ if(keyCode== UP){
+  if(y>0){
+  y=y-4;}
+}
+ else if(keyCode== DOWN){
+ if(y<600-90){
+  y=y+4;}
+ }
+ 
+stroke(255);
+fill(255,255,255);
+rect(750,y,20,90);
+
+ if(keyPressed){
+ if(key== 'w'){
+   if(f>0){
+  f=f-4;} 
+ }
+ else if(key== 's'){
+   if(f<600-90){
+  f=f+4;}}
+ }
+  }
